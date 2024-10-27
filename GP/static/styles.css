@@ -1,0 +1,108 @@
+/* Global styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="file"] {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    margin-bottom: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3) inset;
+}
+
+button {
+    padding: 15px 30px;
+    background-color: #0066ff;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0052cc;
+}
+
+/* Home page specific styles */
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('s.jpg');
+    /* Add your background image */
+    z-index: -1;
+    animation: starsAnimation 20s linear infinite;
+}
+
+@keyframes starsAnimation {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 1000px 1000px;
+        /* Adjust as needed */
+    }
+}
+
+.search-box,
+.upload-box {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Add more styles as needed */
+
+#imageInfo {
+    font-size: 90px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+/* td {
+    background-color: #fff;
+    color: #000;
+    border-radius: 50%;
+} */
+
+
+table,
+td,
+th {
+    border: 1px #fff solid;
+}
+
+table {
+    height: 150px;
+    width: 100%;
+    border-collapse: collapse;
+}

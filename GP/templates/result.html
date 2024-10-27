@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+    <div class="background"></div>
+    
+    <div style="display: flex;">
+        <div class="container">
+            <div style="display: flex; flex-direction: column;">
+                <div id="imageInfo">{{ prediction }}</div>
+
+                {% if planet_data.empty %}
+                <p>No data available for the predicted planet.</p>
+
+
+
+                {% else %}
+                <table>
+                    <tr>
+                        <th>
+                            Average Distance from the sun
+                        </th>
+                        <td>
+                            {{ planet_data[0] }}
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            Diameter
+                        </th>
+                        <td>
+                            {{ planet_data[1] }}
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>
+                            Surface Composition
+                        </th>
+                        <td>
+                            {{ planet_data[2] }}
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            Rotation Period
+                        </th>
+                        <td>
+                            {{ planet_data[3] }}
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            Revolution Period
+                        </th>
+                        <td>
+                            {{ planet_data[4] }}
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <th>
+                            Known No. of Moons
+                        </th>
+                        <td>
+                            {{ planet_data[5] }}
+                        </td>
+                    </tr>
+                </table>
+
+                <h1 style="margin-top: 50px"></h1>
+                <p style="text-align: justify;"> {{ planet_data[6] }}</p>
+                {% endif %}
+            </div>
+        </div>
+
+        <div class="container">
+            <img id="imageDisplay" width="400px" src="{{ url_for('static', filename='' + image_url) }}"
+                alt="Celestial Image">
+
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Exploration</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+    <div class="background"></div>
+    <div class="container">
+        <h1>Space Exploration</h1>
+        
+        <form method="post" enctype="multipart/form-data">
+            <div class="search-box">
+                <h2>Search by Link</h2>
+                <input type="text" id="imageLink" name="imageLink" placeholder="Enter image link">
+            </div>
+            <div class="upload-box">
+                <h2>Upload Image</h2>
+                <input type="file" id="imageUpload" name="file" accept="image/*">
+            </div>
+            <button type="submit">Search</button>
+        </form>
+    </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>
