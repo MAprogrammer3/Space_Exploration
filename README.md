@@ -1,40 +1,40 @@
-
-# Space Exploration Using AI 
+# Space Exploration Using AI
 
 The purpose of this project is to develop an AI model that can accurately classify images of celestial bodies and provide relevant data and descriptions for each image. By leveraging AI techniques, we aim to streamline the analysis of astronomical images and enable researchers and enthusiasts to gain insights into the nature and characteristics of celestial bodies more efficiently. In this project, users will have the ability to search using two methods: by providing a link to an image or by uploading images directly. This dual approach enhances user accessibility and convenience.
 
 ## Dataset (images)
+
 ### Planets:
-- earth
-- jupiter
-- mars
-- moon
-- neptune
-- pluto
-- saturn
-- uranus
-- venus
-  
-### Galaxy : 
-- asteroids
-- spiral
+- Earth
+- Jupiter
+- Mars
+- Moon
+- Neptune
+- Pluto
+- Saturn
+- Uranus
+- Venus
+
+### Galaxy:
+- Asteroids
+- Spiral
 
 ## Inference
-##### Full output 
-![Alt Text](images\output.jpg)
-##### Search by link 
-![Alt Text](images\link.jpg)
-- output by link 
-![Alt Text](images\outputlike.jpg)
 
-##### Search by file
-![Alt Text](images\file.jpg)
-- output by link 
-![Alt Text](images\outputfile.jpg)
+### Full output
+![Full Output](images/output.jpg)
 
-- Galaxy image  
-![Alt Text](images\galaxy.jpg)
+### Search by link
+![Search by Link](images/link.jpg)
+- Output by link
+![Output by Link](images/outputlike.jpg)
 
+### Search by file
+![Search by File](images/file.jpg)
+- Output by link
+![Output by File](images/outputfile.jpg)
 
-- [Click here for more information](Space_Exploration/Space Exploration-Report.pdf)
+### Galaxy image
+![Galaxy Image](images/galaxy.jpg)
 
+[Click here for more information](/absolute/path/to/Space_Exploration/Space_Exploration-Report.pdf)
