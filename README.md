@@ -37,4 +37,4 @@ The purpose of this project is to develop an AI model that can accurately classi
 ### Galaxy image
 ![Galaxy Image](images/galaxy.jpg)
 
-[Click here for more information](Space_Exploration/Space_Exploration-Report.pdf)
+[Click here for more information](Space_Exploration-Report.pdf)
