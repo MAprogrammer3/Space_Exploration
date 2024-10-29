@@ -21,7 +21,7 @@ The purpose of this project is to develop an AI model that can accurately classi
 
 ## Inference
 
-### Full output
+### output
 ![Full Output](images/output.jpg)
 
 ### Search by link
